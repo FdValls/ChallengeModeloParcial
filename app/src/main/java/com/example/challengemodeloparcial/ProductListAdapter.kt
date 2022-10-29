@@ -26,7 +26,6 @@ class ProductListAdapter(
 
         holder.setName(productList[position].nombre)
         holder.setCatergoria(productList[position].categoria)
-
         holder.setImgaen(productList[position])
 
         holder.getCardLayout().setOnClickListener {

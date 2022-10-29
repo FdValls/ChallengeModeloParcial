@@ -1,0 +1,44 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <PreferenceCategory android:title="Visibles">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="check_box_preference_1"
+            android:title="Check box preference" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_preference_1"
+            android:title="Switch preference" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="Datos">
+
+        <EditTextPreference
+            android:defaultValue="nombre"
+            app:allowDividerAbove="true"
+            app:key="signature_string"
+            app:title="Nombre"
+            app:useSimpleSummaryProvider="false" />
+
+        <ListPreference
+            app:defaultValue="true"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="reply"
+            app:title="Categoria"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:defaultValue="$1100"
+            android:key="valor_es_importante"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Precio"
+            app:useSimpleSummaryProvider="true"
+            tools:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -40,4 +40,8 @@
             android:name="product"
             app:argType="com.example.challengemodeloparcial.Product" />
     </fragment>
+    <activity
+        android:id="@+id/settingsActivity"
+        android:name="com.example.challengemodeloparcial.SettingsActivity"
+        android:label="SettingsActivity" />
 </navigation>

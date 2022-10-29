@@ -164,7 +164,7 @@ class ListProductFragment : Fragment(), Serializable {
     }
 
     fun onItemClick(position: Int): Boolean {
-        Snackbar.make(v, position.toString(), Snackbar.LENGTH_SHORT).show()
+        //Snackbar.make(v, position.toString(), Snackbar.LENGTH_SHORT).show()
         Toast.makeText(activity, "Ir a detalles", Toast.LENGTH_SHORT)
             .show()
         val myProduct = products[position]

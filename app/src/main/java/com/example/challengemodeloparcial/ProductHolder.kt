@@ -37,8 +37,4 @@ class ProductHolder(v: View) : RecyclerView.ViewHolder(v), Serializable {
         return view.findViewById(R.id.card_package_item)
     }
 
-//
-//        fun getImageView () : ImageView {
-//            return view.findViewById(R.id.img_item)
-//        }
 }

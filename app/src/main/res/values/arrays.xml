@@ -1,0 +1,16 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Comedia</item>
+        <item>Drama</item>
+        <item>Acciòn</item>
+        <item>Suspenso</item>
+        <item>Terror</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+        <item>3_optios</item>
+    </string-array>
+</resources>
