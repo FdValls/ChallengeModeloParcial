@@ -3,18 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/primeraPantalla"
+        android:id="@+id/homeFragment"
         android:title="Home" />
     <!--        android:icon="@drawable/ic_details"-->
 
     <item
-        android:id="@+id/id_settings_activity"
-        android:title="Settings" />
+        android:id="@+id/profileFragment"
+        android:title="Profile" />
 
 
     <item
-        android:id="@+id/thirdFragment"
-        android:title="Buscar" />
+        android:id="@+id/listProductFragment"
+        android:title="Notificacion" />
 
 
 </menu>

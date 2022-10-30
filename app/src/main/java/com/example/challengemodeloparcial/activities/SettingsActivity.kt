@@ -1,8 +1,10 @@
-package com.example.challengemodeloparcial
+package com.example.challengemodeloparcial.activities
+
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.preference.PreferenceFragmentCompat
+import com.example.challengemodeloparcial.R
 
 class SettingsActivity : AppCompatActivity() {
 

@@ -1,9 +1,7 @@
-package com.example.challengemodeloparcial
+package com.example.challengemodeloparcial.fragments
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -14,6 +12,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.findNavController
 import com.bumptech.glide.Glide
+import com.example.challengemodeloparcial.R
+import com.example.challengemodeloparcial.activities.SettingsActivity
+import com.example.challengemodeloparcial.entities.Product
 
 class TerceraPantalla : Fragment() {
 
@@ -23,7 +24,6 @@ class TerceraPantalla : Fragment() {
     private lateinit var catMovie: TextView
     private lateinit var ageMovie: TextView
     private lateinit var priceMovie: TextView
-    private lateinit var myTxt: String
     private lateinit var product: Product
     private lateinit var btbBack: Button
     private lateinit var btnImg: ImageButton
@@ -33,7 +33,6 @@ class TerceraPantalla : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        myTxt = TerceraPantallaArgs.fromBundle(requireArguments()).nameTitle
         product = TerceraPantallaArgs.fromBundle(requireArguments()).product
 
     }
@@ -60,7 +59,7 @@ class TerceraPantalla : Fragment() {
         super.onStart()
 
         btbBack.setOnClickListener {
-            var a = TerceraPantallaDirections.actionTerceraPantallaToListProductFragment(myTxt)
+            var a = TerceraPantallaDirections.actionTerceraPantallaToListProductFragment()
             v.findNavController().navigate(a)
         }
         Glide.with(photoImg.context).load(product.urlImage).into(photoImg)
@@ -76,15 +75,4 @@ class TerceraPantalla : Fragment() {
         }
     }
 
-    /*override fun onAttach(context: Context) {
-        super.onAttach(context)
-        //java.lang.ClassCastException: com.example.challengemodeloparcial.PrincipalActivity cannot be cast to com.example.challengemodeloparcial.TerceraPantalla$HomeListener
-        mListener = context as HomeListener
-    }
-
-
-    interface HomeListener {
-        fun sendData(nameTitle: String)
-    }
-*/
 }

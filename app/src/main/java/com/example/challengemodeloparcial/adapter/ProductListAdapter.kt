@@ -1,8 +1,11 @@
-package com.example.challengemodeloparcial
+package com.example.challengemodeloparcial.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.challengemodeloparcial.R
+import com.example.challengemodeloparcial.entities.Product
+import com.example.challengemodeloparcial.holder.ProductHolder
 
 class ProductListAdapter(
     private var productList: MutableList<Product>,

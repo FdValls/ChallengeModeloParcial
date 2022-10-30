@@ -1,4 +1,4 @@
-package com.example.challengemodeloparcial
+package com.example.challengemodeloparcial.holder
 
 import android.view.View
 import android.widget.ImageView
@@ -6,6 +6,8 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.challengemodeloparcial.R
+import com.example.challengemodeloparcial.entities.Product
 import java.io.Serializable
 
 class ProductHolder(v: View) : RecyclerView.ViewHolder(v), Serializable {

@@ -1,4 +1,4 @@
-package com.example.challengemodeloparcial
+package com.example.challengemodeloparcial.entities
 
 import java.io.Serializable
 

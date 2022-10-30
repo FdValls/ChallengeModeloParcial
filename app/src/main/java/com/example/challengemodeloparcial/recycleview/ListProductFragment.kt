@@ -1,4 +1,4 @@
-package com.example.challengemodeloparcial
+package com.example.challengemodeloparcial.recycleview
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,12 +9,14 @@ import android.widget.Toast
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.challengemodeloparcial.adapter.ProductListAdapter
+import com.example.challengemodeloparcial.R
+import com.example.challengemodeloparcial.entities.Product
 import java.io.Serializable
 
 class ListProductFragment : Fragment(), Serializable {
 
     lateinit var v: View
-    lateinit var title: String
     lateinit var recProduct: RecyclerView
     var products: MutableList<Product> = ArrayList()
     private lateinit var linearLayoutManager: LinearLayoutManager
@@ -26,9 +28,6 @@ class ListProductFragment : Fragment(), Serializable {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        title = ListProductFragmentArgs.fromBundle(requireArguments()).txtTitle
-        activity?.title = title
 
     }
 
@@ -157,7 +156,7 @@ class ListProductFragment : Fragment(), Serializable {
         Toast.makeText(activity, "Ir a detalles", Toast.LENGTH_SHORT)
             .show()
         val myProduct = products[position]
-        var a = ListProductFragmentDirections.actionListProductFragmentToTerceraPantalla(title,myProduct)
+        var a = ListProductFragmentDirections.actionListProductFragmentToTerceraPantalla(myProduct)
         v.findNavController().navigate(a)
 
         return true
