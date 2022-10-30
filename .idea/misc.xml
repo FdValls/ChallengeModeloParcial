@@ -14,12 +14,13 @@
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.36468129571577845" />
         <entry key="app/src/main/res/layout/activity_main_drawer2.xml" value="0.11666666666666667" />
         <entry key="app/src/main/res/layout/activity_navigation_drawer.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_principal.xml" value="0.11666666666666667" />
+        <entry key="app/src/main/res/layout/activity_principal.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_settings.xml" value="0.11666666666666667" />
         <entry key="app/src/main/res/layout/activity_test.xml" value="0.1" />
         <entry key="app/src/main/res/layout/content_main_activity_drawer.xml" value="0.11666666666666667" />
         <entry key="app/src/main/res/layout/fragment_detail_product.xml" value="0.18177083333333333" />
         <entry key="app/src/main/res/layout/fragment_fragmento_back_list.xml" value="0.11666666666666667" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.18" />
         <entry key="app/src/main/res/layout/fragment_list_product.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_primera_pantalla.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_segunda_pantalla.xml" value="0.35625" />
@@ -27,8 +28,9 @@
         <entry key="app/src/main/res/layout/fragment_segundo_fragmento.xml" value="0.15" />
         <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.18177083333333333" />
         <entry key="app/src/main/res/layout/fragment_tercera_pantalla.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/item_product.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/item_product.xml" value="0.25" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.25" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19" />
         <entry key="app/src/main/res/xml/root_preference.xml" value="0.18072916666666666" />
         <entry key="app/src/main/res/xml/root_preferences.xml" value="0.5" />
       </map>

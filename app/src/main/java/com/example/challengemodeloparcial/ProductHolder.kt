@@ -27,7 +27,7 @@ class ProductHolder(v: View) : RecyclerView.ViewHolder(v), Serializable {
         txt.text = cat
     }
 
-    fun setImgaen(p: Product) {
+    fun setImg(p: Product) {
         photo = view.findViewById(R.id.id_img_product)
         val img: ImageView = view.findViewById(R.id.id_img_product)
         Glide.with(photo.context).load(p.urlImage).into(photo)

@@ -1,25 +1,14 @@
 package com.example.challengemodeloparcial
 
-import android.app.Activity
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.Toast
-import androidx.core.os.bundleOf
-import androidx.core.view.get
-import androidx.navigation.NavController
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import java.io.Serializable
 
 class ListProductFragment : Fragment(), Serializable {
@@ -60,7 +49,7 @@ class ListProductFragment : Fragment(), Serializable {
         for (i in 1..5) {
             products.add(
                 Product(
-                    "Forest Gump",
+                    "Fernando",
                     Product.Categorias.drama,
                     1994,
                     1100.0,

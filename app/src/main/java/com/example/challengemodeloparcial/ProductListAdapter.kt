@@ -1,11 +1,7 @@
 package com.example.challengemodeloparcial
 
-import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat.startActivity
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 
 class ProductListAdapter(
@@ -26,7 +22,7 @@ class ProductListAdapter(
 
         holder.setName(productList[position].nombre)
         holder.setCatergoria(productList[position].categoria)
-        holder.setImgaen(productList[position])
+        holder.setImg(productList[position])
 
         holder.getCardLayout().setOnClickListener {
             onItemClick(position)
